@@ -1,0 +1,207 @@
+﻿@model JobPortal.Models.Horse
+
+@{
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+@section CssSection
+{
+    <style>
+        label {
+            text-align: left
+        }
+        .col-form-label {
+            font-weight: bold
+        }
+        
+    </style>
+}
+<div class="content">
+<div class="container-fluid">
+
+    <!-- end row -->
+    <div class="row">
+        <div class="col-xl-2 col-md-4">
+        </div>
+        <div class="col-xl-8 col-md-10">
+
+            <div class="card directory-card m-b-20">
+                <div>
+                  
+                    <h2 style="text-align: center;color: #843012">Horse Information</h2>
+                    <hr />
+                    <div class="directory-content text-center p-4">
+                       
+                        @*<p class="mt-4">Creative Director</p>*@
+                        <h5 class="font-16" style="font-weight: bolder"> </h5>
+
+
+
+                        <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">Horse Name</label>
+                            @Html.DisplayFor(model => model.HorseName)
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">Registration Number</label>
+                            <label > @Html.DisplayFor(model => model.RegistrationNumber)</label>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">Color</label>
+                            <label > @Html.DisplayFor(model => model.Color)</label>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-5 col-form-label"> Gender</label>
+
+                            <label> @Html.DisplayFor(model => model.Gender)</label>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-5 col-form-label"> Registration Association</label>
+
+                            <label > @Html.DisplayFor(model => model.RegistrationAssociation)</label>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-5 col-form-label"> Registration Association Number</label>
+
+                            <label > @Html.DisplayFor(model => model.RegistrationAssociationNumber)</label>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">Sire</label>
+
+                            <label > @Html.DisplayFor(model => model.Sire)</label>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">Sire Registration Association</label>
+
+                            <label> @Html.DisplayFor(model => model.SireRegistrationAssociation)</label>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-5 col-form-label"> Registration Association Number</label>
+
+                            <label > @Html.DisplayFor(model => model.Dam)</label>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-5 col-form-label"> Registration Association Number</label>
+
+                            <label > @Html.DisplayFor(model => model.DamNumber)</label>
+
+                        </div>
+                        <br />
+                        <div>
+                            <a asp-action="Index" asp-controller="Horses"><button type="button" class="btn btn-primary waves-effect waves-light">Back To List</button></a>
+                        </div>
+                    </div>
+                </div>
+            @*<div>
+            <h4>Horse</h4>
+            <hr />
+            <dl class="form-vertical">
+                <dt>
+                    @Html.DisplayNameFor(model => model.HorseName)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.HorseName)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.RegistrationNumber)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.RegistrationNumber)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Color)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Color)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Gender)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Gender)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.RegistrationAssociation)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.RegistrationAssociation)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.RegistrationAssociationNumber)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.RegistrationAssociationNumber)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Sire)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Sire)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.SireRegistrationAssociation)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.SireRegistrationAssociation)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.SireRegistrationNumber)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.SireRegistrationNumber)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Dam)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Dam)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.DamAssociation)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.DamAssociation)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.DamNumber)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.DamNumber)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MembershipType)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MembershipType)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MembershipStatus)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MembershipStatus)
+                </dd>
+            </dl>
+        </div>*@
+        </div>
+    </div>
+</div>
+</div>
+</div>
+@*<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>*@

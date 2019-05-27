@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui">
+    <title></title>
+    <meta content="Admin Dashboard" name="description">
+    <meta content="Themesbrand" name="author">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- DataTables -->
+    <link href="~/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="~/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <!-- Responsive datatable examples -->
+    <link href="~/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
+    <link href="~/rex/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/rex/assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+    <link href="~/rex/assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="~/rex/assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        .navbar-custom,
+        .button-menu-mobile {
+            background: #11a96a;
+        }
+    </style>
+
+    @RenderSection("CssSection", required: false);
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div id="wrapper">
+        <div class="topbar">
+            <!-- LOGO -->
+            <div class="topbar-left"><a href="" class="logo"><span><img src="~/images/rex.jpg" alt="Rex" height="18"> </span><i><img src="~/images/rex.jpg" alt="" height="22"></i></a></div>
+            <nav class="navbar-custom">
+                <ul class="navbar-right d-flex list-inline float-right mb-0">
+                    <li class="dropdown notification-list d-none d-sm-block">
+                        <form role="search" class="app-search">
+                            <div class="form-group mb-0">
+
+                            </div>
+                        </form>
+                    </li>
+
+                    <li class="dropdown notification-list">
+                        <div class="dropdown notification-list nav-pro-img">
+                            <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false"><img src="~/images/rex.jpg" alt="user" class="rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+                                <!-- item--><a class="dropdown-item" href="#"><i class="mdi mdi-account-circle m-r-5"></i> Profile</a>
+
+                                <div class="dropdown-divider"></div><a class="dropdown-item text-danger" asp-controller="Home" asp-action="Index"><i class="mdi mdi-power text-danger"></i> Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-inline menu-left mb-0">
+                    <li class="float-left">
+                        <button class="button-menu-mobile open-left waves-effect"><i class="mdi mdi-menu"></i></button>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <!-- Top Bar End -->
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left side-menu">
+            <div class="slimscroll-menu" id="remove-scroll">
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu" id="side-menu">
+                        <li class="menu-title">Main</li>
+                        @*<li><a asp-controller="Home" asp-action="Dashboard" class="waves-effect"><i class="mdi mdi-view-dashboard"></i><span class="badge badge-primary badge-pill float-right"></span> <span>Dashboard</span></a></li>
+                        <li><a asp-controller="Home" asp-action="Filter" class="waves-effect"><i class="mdi mdi-settings m-r-5"></i><span>Email Input</span></a></li>*@
+
+                        <li><a asp-controller="Members" asp-action="Create" class="waves-effect"><i class="mdi mdi-view-dashboard"></i><span class="badge badge-primary badge-pill float-right"></span> <span>Member Registration</span></a></li>
+                        <li><a asp-controller="Members" asp-action="Index" class="waves-effect"><i class="mdi mdi-view-dashboard"></i><span class="badge badge-primary badge-pill float-right"></span> <span>Member List</span></a></li>
+                        
+                        <li><a asp-controller="Horses" asp-action="Create" class="waves-effect"><i class="mdi mdi-view-dashboard"></i><span class="badge badge-primary badge-pill float-right"></span> <span>Horse Registration</span></a></li>
+
+                        <li><a asp-controller="Horses" asp-action="Index" class="waves-effect"><i class="mdi mdi-view-dashboard"></i><span class="badge badge-primary badge-pill float-right"></span> <span>Horse List</span></a></li>
+
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- Sidebar -left -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+        @RenderBody()
+            <!-- content -->
+            <footer class="footer">© 2019 <a href="https:rexststembangladesh.com">Rex System Bangladesh</a> <span class="d-none d-sm-inline-block"></footer>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- END wrapper -->
+    <!-- jQuery  -->
+    <script src="~/rex/assets/js/jquery.min.js"></script>
+    <script src="~/rex/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="~/rex/assets/js/metisMenu.min.js"></script>
+    <script src="~/rex/assets/js/jquery.slimscroll.js"></script>
+    <script src="~/rex/assets/js/waves.min.js"></script>
+    <script src="~/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- Required datatable js -->
+    <script src="~/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="~/plugins/datatables/dataTables.buttons.min.js"></script>
+    <script src="~/plugins/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="~/plugins/datatables/jszip.min.js"></script>
+    <script src="~/plugins/datatables/pdfmake.min.js"></script>
+    <script src="~/plugins/datatables/vfs_fonts.js"></script>
+    <script src="~/plugins/datatables/buttons.html5.min.js"></script>
+    <script src="~/plugins/datatables/buttons.print.min.js"></script>
+    <script src="~/plugins/datatables/buttons.colVis.min.js"></script>
+    <!-- Responsive examples -->
+    <script src="~/plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="~/plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <!-- Datatable init js -->
+    <script src="~/rex/assets/pages/datatables.init.js"></script>
+    <!-- App js -->
+<script src="~/rex/assets/js/app.js"></script>
+
+@RenderSection("Script",required:false);
+</body>
+
+</html>
+

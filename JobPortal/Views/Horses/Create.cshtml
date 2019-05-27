@@ -1,0 +1,253 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutMain.cshtml";
+}
+
+@section CssSection{
+    
+    <style type="text/css">
+        .wrapper-page {
+            margin: 2.5% auto;
+            max-width: 700px;
+            position: relative;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .text-style {
+            margin-top: -90px;
+        }
+
+        .card-body h3 {
+            margin-left: 15px !important;
+        }
+
+
+
+        .form-control {
+            font-size: 14px;
+        }
+
+        .text-muted {
+            color: #000000 !important;
+        }
+
+        .header-text {
+            color: #a24b4b;
+        }
+        .h4, h4 {
+            font-size: large;
+        }
+    </style>
+        
+}
+
+    <div class="content">
+    <div class="container-fluid">
+    <div class="row">
+       
+    </div>
+
+    <!-- Begin page -->
+    <div class="wrapper-page">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="text-left m-0"><a href="" class="logo logo-admin"><img src="~/rex/assets/images/registericon1.png" height="100" alt="logo"></a></h3>
+
+                <div class="p-3">
+                    <div class="text-style">
+                        <h4 class="text-muted  m-b-5 text-center page-title"><strong>ARHA Registration Application</strong></h4>
+                        <p class="text-muted text-center"></p>
+                    </div>
+                    @if (ViewBag.message != null)
+                    {
+                        <h4>@ViewBag.message</h4>
+                    }
+                    <br>
+                    <form class="form-horizontal m-t-30" method="post">
+                        <div class="form-group">
+                            <h4 class="header-text">Horse Information</h4>
+                        </div>
+                        <div class="form-group">
+                            <label for="Name"> <strong>Horse Name</strong></label>
+                            <input type="text" class="form-control" id="Name" placeholder="Name" name="HorseName">
+                        </div>
+                        <div class="form-group">
+                            <label for="Number">ARHA Registration Number</label>
+                            <input type="text" class="form-control" id="Number" placeholder="Registration Number" name="RegistrationNumber">
+                        </div>
+
+                        <div>
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <label for="Color"> Horse Color</label>
+                                    <input class="form-control" type="text" id="Color" placeholder="Color" name="Color">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="Sex">Horse Sex</label>
+                                    <div>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" value="stallion" name="Gender">&nbsp;stallion
+                                        </label>&nbsp; &nbsp;
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" value="mare" name="Gender">&nbsp;mare
+                                        </label>&nbsp; &nbsp;
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" value="gelding" name="Gender">&nbsp;gelding
+                                        </label>&nbsp; &nbsp;
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="RegistrationAssociation">Primary Registration Association</label>
+                                <input type="text" class="form-control" id="RegistrationAssociation" placeholder="Registration Association" name="RegistrationAssociation">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="RegistrationAssociationNumber">Primary Registration Association number</label>
+                                <input type="text" class="form-control" id="RegistrationAssociationNumber" placeholder="Registration Association Number" name="RegistrationAssociationNumber">
+
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <label for="Sire">Horse Sire</label>
+                            <input type="text" class="form-control" id="Sire" placeholder="Horse Sire" name="Sire">
+                        </div>
+                        <div class="form-group">
+
+                        </div>
+
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="Sire Registration Association">Horse Sire Registration Association</label>
+                                <input type="text" class="form-control" id="SireRegistrationAssociation" placeholder="Horse Sire Registration Association" name="SireRegistrationAssociation">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="SireRegistrationNumber">Horse Sire Registration Number</label>
+                                <input type="text" class="form-control" id="SireRegistrationNumber" placeholder="Horse Sire Registration Number" name="SireRegistrationNumber">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="Dam">Horse Dam </label>
+                            <input type="text" class="form-control" id="Dam" placeholder="Dam" name="Dam">
+                        </div>
+
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="DamAssociation">Horse Dam Registration Association</label>
+                                <input type="text" class="form-control" id="DamAssociation" name="DamAssociation" placeholder="Dam Registration Association">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="DamNumber">Horse Dam Registration Number</label>
+                                <input type="text" class="form-control" id="DamNumber" placeholder="Dam Number" name="DamNumber">
+
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <h4 class="header-text">Owner Information</h4>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="MembershipType">Member</label>
+                            <select class="form-control" id="" name="MemberId">
+                                <option>Select Member</option>
+                                @foreach (var member in ViewBag.Members)
+                                {
+
+                                    <option value="@member.Id">@member.Name</option>
+                                }
+                            </select>
+
+                        </div>
+
+                        @*
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="Name"> Member Name</label>
+                                        <input type="text" class="form-control" id="Name" placeholder="Name">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="Number">Member Number</label>
+                                        <input type="text" class="form-control" id="Number" placeholder="Member Number">
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="Address">Member Address</label>
+                                    <input type="text" class="form-control" id="Address" placeholder="Address">
+                                </div>
+
+
+
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="Phone">Member Phone</label>
+                                        <input type="text" class="form-control" id="Phone" placeholder="Phone">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="Email">Member Email</label>
+                                        <input type="email" class="form-control" id="Phone" placeholder="Email">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <label for="Money">ARHM Money earned</label>
+                                        <input type="email" class="form-control" id="Money" placeholder="Money Earned">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="Points">ARHM Points earned</label>
+                                        <input type="email" class="form-control" id="Points" placeholder="Points Earned">
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="form-group">
+                                    <label>Notes</label>
+                                    <div>
+                                        <textarea required="" class="form-control" rows="2"></textarea>
+                                    </div>
+                                </div>*@
+
+                        <div class="form-group row m-t-20">
+                            <div class="col-12 text-right">
+                                <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+

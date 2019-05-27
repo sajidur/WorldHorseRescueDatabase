@@ -1,0 +1,120 @@
+﻿@model JobPortal.Models.Horse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Horse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HorseName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HorseName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RegistrationNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RegistrationNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RegistrationAssociation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RegistrationAssociation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RegistrationAssociationNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RegistrationAssociationNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sire)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sire)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SireRegistrationAssociation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SireRegistrationAssociation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SireRegistrationNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SireRegistrationNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Dam)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dam)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DamAssociation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DamAssociation)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DamNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DamNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MembershipType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MembershipType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MembershipStatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MembershipStatus)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
+</body>
+</html>
