@@ -111,7 +111,7 @@ using JobPortal.Models;
                             <div class=""directory-overlay"">");
             EndContext();
             BeginContext(2533, 123, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "8c972ea170af4b0e843d2cd5afb0cf36", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "22ea50ef17e047bd91ba50d43ee1ff87", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -241,7 +241,7 @@ WriteAttributeValue("", 5443, ViewBag.memberInfo.Address, 5443, 27, false);
             WriteLiteral(" id=\"example-text-input\">\r\n                                </div>\r\n                            </div>\r\n                            <br />\r\n                            <div>\r\n                                ");
             EndContext();
             BeginContext(5677, 143, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0cfda15c0d0415a89e018f69f53b368", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1797141174d2437f92a57de9fa962de8", async() => {
                 BeginContext(5724, 92, true);
                 WriteLiteral("<button type=\"button\" class=\"btn btn-primary waves-effect waves-light\">Back To List</button>");
                 EndContext();

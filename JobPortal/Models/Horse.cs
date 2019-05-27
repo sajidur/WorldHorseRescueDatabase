@@ -25,6 +25,7 @@ namespace JobPortal.Models
         public string MembershipType { get; set; }
         public string MembershipStatus { get; set; }
         //public virtual List<Member> Members { get; set; }
+        public int MemberId { get; set; }
         public virtual Member Member{ get; set; }
     }
 }

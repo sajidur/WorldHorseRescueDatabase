@@ -34,6 +34,10 @@ namespace JobPortal.Controllers
 
             var horse = await _context.Horses
                 .FirstOrDefaultAsync(m => m.Id == id);
+            if (horse!=null)
+            {
+                ViewBag.member = _context.Members.FirstOrDefault(m => m.Id == horse.MemberId);
+            }
             if (horse == null)
             {
                 return NotFound();

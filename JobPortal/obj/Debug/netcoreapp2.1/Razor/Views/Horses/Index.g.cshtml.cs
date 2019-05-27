@@ -197,7 +197,7 @@ using JobPortal.Models;
             WriteLiteral("                <div class=\"float-right\">");
             EndContext();
             BeginContext(2009, 128, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dd9a6183b1d7446ea829f5454a01f113", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2cf581e8452b4b4387647ae3238afc0b", async() => {
                 BeginContext(2106, 27, true);
                 WriteLiteral("<i class=\"fa fa-print\"></i>");
                 EndContext();

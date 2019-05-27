@@ -31,7 +31,7 @@
                     <h2 style="text-align: center;color: #843012">Horse Information</h2>
                     <hr />
                     <div class="directory-content text-center p-4">
-                       
+
                         @*<p class="mt-4">Creative Director</p>*@
                         <h5 class="font-16" style="font-weight: bolder"> </h5>
 
@@ -44,12 +44,12 @@
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-5 col-form-label">Registration Number</label>
-                            <label > @Html.DisplayFor(model => model.RegistrationNumber)</label>
+                            <label> @Html.DisplayFor(model => model.RegistrationNumber)</label>
 
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-5 col-form-label">Color</label>
-                            <label > @Html.DisplayFor(model => model.Color)</label>
+                            <label> @Html.DisplayFor(model => model.Color)</label>
 
                         </div>
                         <div class="form-group row">
@@ -61,19 +61,19 @@
                         <div class="form-group row">
                             <label class="col-sm-5 col-form-label"> Registration Association</label>
 
-                            <label > @Html.DisplayFor(model => model.RegistrationAssociation)</label>
+                            <label> @Html.DisplayFor(model => model.RegistrationAssociation)</label>
 
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-5 col-form-label"> Registration Association Number</label>
 
-                            <label > @Html.DisplayFor(model => model.RegistrationAssociationNumber)</label>
+                            <label> @Html.DisplayFor(model => model.RegistrationAssociationNumber)</label>
 
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-5 col-form-label">Sire</label>
 
-                            <label > @Html.DisplayFor(model => model.Sire)</label>
+                            <label> @Html.DisplayFor(model => model.Sire)</label>
 
                         </div>
                         <div class="form-group row">
@@ -85,13 +85,20 @@
                         <div class="form-group row">
                             <label class="col-sm-5 col-form-label"> Registration Association Number</label>
 
-                            <label > @Html.DisplayFor(model => model.Dam)</label>
+                            <label> @Html.DisplayFor(model => model.Dam)</label>
 
                         </div>
                         <div class="form-group row">
                             <label class="col-sm-5 col-form-label"> Registration Association Number</label>
 
-                            <label > @Html.DisplayFor(model => model.DamNumber)</label>
+                            <label> @Html.DisplayFor(model => model.DamNumber)</label>
+
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">Registered Member Name</label>
+
+                            <label><strong>@ViewBag.member.Name</strong> </label>
 
                         </div>
                         <br />
