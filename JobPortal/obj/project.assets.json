@@ -12539,11 +12539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Rex Web Solution Bangladesh\\JobPortal\\JobPortal\\JobPortal.csproj",
+      "projectUniqueName": "D:\\Rex Web Solution Bangladesh\\WorldHorseRescueDatabase\\WorldHorseRescueDatabase\\JobPortal\\JobPortal.csproj",
       "projectName": "JobPortal",
-      "projectPath": "D:\\Rex Web Solution Bangladesh\\JobPortal\\JobPortal\\JobPortal.csproj",
+      "projectPath": "D:\\Rex Web Solution Bangladesh\\WorldHorseRescueDatabase\\WorldHorseRescueDatabase\\JobPortal\\JobPortal.csproj",
       "packagesPath": "C:\\Users\\Zahid\\.nuget\\packages\\",
-      "outputPath": "D:\\Rex Web Solution Bangladesh\\JobPortal\\JobPortal\\obj\\",
+      "outputPath": "D:\\Rex Web Solution Bangladesh\\WorldHorseRescueDatabase\\WorldHorseRescueDatabase\\JobPortal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

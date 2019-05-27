@@ -55,7 +55,11 @@ namespace JobPortal.Controllers
             var Member = _context.Account.FirstOrDefault(m => m.UserName == account.UserName && m.Password==account.Password);
             if (Member!=null)
             {
-                return Redirect("Members/Index");
+                return Redirect("Horses/Index");
+            }
+            else
+            {
+                ViewBag.message = "UserName or Password error";
             }
             return View();
         }
