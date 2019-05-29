@@ -28,8 +28,7 @@ namespace JobPortal
         {
             services.AddDbContext<HorseRegistrationDbContext>(options =>
                 options.UseSqlServer(
-                    @"Data Source=DESKTOP-D772VHN\SQLEXPRESS;Initial Catalog=HorseRegistration;Integrated Security=True;",b=>b.UseRowNumberForPaging()));
-            services.AddMvc();
+   @"Data Source=SQL7001.site4now.net;Initial Catalog=DB_A48D20_horse;User Id=DB_A48D20_horse_admin;Password=Root@pass1;", b => b.UseRowNumberForPaging())); services.AddMvc();
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.

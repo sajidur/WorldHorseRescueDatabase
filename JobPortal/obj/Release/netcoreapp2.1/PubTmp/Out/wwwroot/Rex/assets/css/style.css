@@ -3285,7 +3285,7 @@ table.focus-on tbody tr.focused td {
 
 .directory-card .directory-overlay {
     background-color: rgba(62, 183, 186, .7);
-    padding: 20px
+    /*padding: 20px*/
 }
 
 .directory-card img {
