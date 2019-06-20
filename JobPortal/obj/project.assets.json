@@ -12406,11 +12406,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Mobashwir Hasan\\Documents\\GitHub\\WorldHorseRescueDatabase\\JobPortal\\JobPortal.csproj",
       "projectName": "JobPortal",
       "projectPath": "C:\\Users\\Mobashwir Hasan\\Documents\\GitHub\\WorldHorseRescueDatabase\\JobPortal\\JobPortal.csproj",
       "packagesPath": "C:\\Users\\Mobashwir Hasan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Mobashwir Hasan\\Documents\\GitHub\\WorldHorseRescueDatabase\\JobPortal\\obj\\",
+=======
+      "projectUniqueName": "D:\\Rex Web Solution Bangladesh\\WorldHorseRescueDatabase\\WorldHorseRescueDatabase\\JobPortal\\JobPortal.csproj",
+      "projectName": "JobPortal",
+      "projectPath": "D:\\Rex Web Solution Bangladesh\\WorldHorseRescueDatabase\\WorldHorseRescueDatabase\\JobPortal\\JobPortal.csproj",
+      "packagesPath": "C:\\Users\\Zahid\\.nuget\\packages\\",
+      "outputPath": "D:\\Rex Web Solution Bangladesh\\WorldHorseRescueDatabase\\WorldHorseRescueDatabase\\JobPortal\\obj\\",
+>>>>>>> d5641131623cf7faf9a31fe2881fc17e3c51ef4a
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

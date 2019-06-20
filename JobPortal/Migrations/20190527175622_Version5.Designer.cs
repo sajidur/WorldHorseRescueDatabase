@@ -3,14 +3,16 @@ using JobPortal.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace JobPortal.Migrations
 {
     [DbContext(typeof(HorseRegistrationDbContext))]
-    partial class HorseRegistrationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190527175622_Version5")]
+    partial class Version5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
